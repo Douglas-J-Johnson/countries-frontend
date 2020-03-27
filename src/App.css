@@ -1,38 +1,284 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding-top: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.CardsMode {
+  color: rgb(139, 168, 168);
+  padding: 0.5rem;
+  width: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.MapMode {
+  color: #E9CFBA;
+  padding: 0.5rem;
+  width: 50px;
+}
+
+sup {
+  font-size:xx-small;
+  vertical-align:super;
+}
+
+.FilterAndSearch {
+  color: darkslategray;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.Sorts {
+  width: 12rem;
+  Margin-right: 5rem;
+  flex-wrap: wrap;
+}
+
+.Sort {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 2rem;
+}
+
+.SortName {
+
+}
+
+.SortButton {
+  margin-left: 0.5rem;
+}
+
+.Filters {
+  width: 30rem;
+  Margin-left: 1rem;
+  flex-wrap: wrap;
+}
+
+.Filter {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  height: 2rem;
+}
+
+.FilterName {
+  
+}
+
+.FilterSelect {
+  color: darkslategray;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size: 1.5rem;
+  background-color: white;
+  border: 0px;
+  width: 70%;
+}
+
+option {
+  font-size: 1.25rem;
+}
+
+.Search {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.SearchText {
+  color: darkslategray;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size: 1.5rem;
+  background-color: whitesmoke;
+  border: 0px;
+  width: 100%;
+}
+
+.Unfilter {
+  color: darkslategray;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  background-color: whitesmoke;
+  border: 0px;
+  margin-left: 1rem;
+}
+
+/*CARDS*/
+.CountryCardsList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.CountryCard {
+  font-family: 'Oswald', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: inset 0 0 0.5rem #000000;
+  color: whitesmoke;
+  background-color: darkslategray;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 1rem;
+  width: 20rem;
+  height: 26rem;
+}
+
+.CountryVisitInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.CountryVisitItem {
+
+}
+
+.CountryName {
+  font-size: 1.25rem;
+  font-weight: bolder;
+  cursor: default;
+  margin-top: 0.75rem;
+}
+
+.CountryNativeName {
+  font-size: 1rem;
+  cursor: default;
+  margin-top: 0.25rem;
+}
+
+.CountryCapitalConatiner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  font-size: 1rem;
+  cursor: default;
+  margin-top: 0.75rem;
+}
+
+.CountryCapital {
+  margin-left: 0.35rem;
+}
+
+.CountryFlag {
+  height: 8rem;
+  margin-top: 0.5rem;
+}
+
+.CountryRegionSubregion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.CountryRegion {
+  font-weight: bolder;
+  margin-left: 0.35rem;
+}
+
+.CountrySubregion {
+  margin-left: 0.35rem;
+}
+
+.CountryLanguagesList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.75rem;
+}
+
+.CountryLanguage {
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline;
+  margin-left: 0.35rem;
+}
+
+.CountryCurrenciesList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.CountryCurrency {
+  cursor: pointer;
+  margin-left: 0.35rem;
+}
+
+.CountryPopulationConatiner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  font-size: 1.25rem;
+  cursor: default;
+  margin-top: 0.75rem;
+}
+
+.CountryPopulation {
+  margin-left: 0.35rem;
+}
+
+.CountryAreaConatiner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  font-size: 1.25rem;
+  cursor: default;
+  margin-top: 0.5rem;
+}
+
+.CountryArea {
+  margin-left: 0.35rem;
+}
+
+/*MAPS*/
+.MapContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;  
+}
+
+.MapSelect {
+  color: darkred;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size: 1.5rem;
+  background-color: white;
+  border: 0px;
+  width: 150px;
 }
