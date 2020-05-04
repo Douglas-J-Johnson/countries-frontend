@@ -1,7 +1,7 @@
 import React from 'react'
 import Plot from 'react-plotly.js';
 
-export default function Map ({countries, values, attribute}) {
+export default function Map ({countries, values}) {
     return (
         <Plot
             data={[{
@@ -23,6 +23,3 @@ export default function Map ({countries, values, attribute}) {
         />
     );
 }
-
-// text: unpack(rows, 'location'),
-
